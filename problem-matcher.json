@@ -1,0 +1,34 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "more-disk-space-no-space-left",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "^((?!.*(?:[Ff]ile [Ww]atchers?|[Ii][Nn][Oo][Tt][Ii][Ff][Yy])).*[Nn]o [Ss]pace [Ll]eft(?: [Oo]n [Dd]evice)?.*)$",
+          "message": 1
+        }
+      ]
+    },
+    {
+      "owner": "more-disk-space-enospc",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "^((?!.*(?:[Nn]o [Ss]pace [Ll]eft|[Ff]ile [Ww]atchers?|[Ii][Nn][Oo][Tt][Ii][Ff][Yy])).*\\b[Ee][Nn][Oo][Ss][Pp][Cc]\\b.*)$",
+          "message": 1
+        }
+      ]
+    },
+    {
+      "owner": "more-disk-space-apt",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "^(.*[Yy]ou (?:do not|don't) have enough free space.*)$",
+          "message": 1
+        }
+      ]
+    }
+  ]
+}
